@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="webth.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Python Programming</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="WhatsApp_Image_2024-02-08_at_19.45.14_bd9656ee-removebg-preview.png" alt="logo" height="65px">
+            <h1 style="font-size: 40px;display: inline; float: left; margin-top: 0;padding-bottom:10 ; color: #ea9368;">Study </h1>
+            <a href="\index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Lifestyle</a>
+                <div class="dropdown-content">
+                    <a href="\life_style(teory).html">Personality Development</a>
+                    <a href="\attire(theory).html">Attire</a>
+                    <a href="\food.html">Food </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Study</a>
+                <div class="dropdown-content">
+                    <a href="\c_theory.html">C</a>
+                    <a href="\yoga_c++/c++/index_Cpp.html">C++</a>
+                    <a href="\java_zip/java/index_java.html">Java</a>
+                    <a href="\python/python.html">Python</a>
+                    <a href="\web_dev/webth.html">Web-dev</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Workout</a>
+                <div class="dropdown-content">
+                    <a href="\gym/gym.html">Exercise</a>
+                    <a href="\yoga_c++/yoga/yoga.html">Yoga</a>
+                </div>
+            </div>
+            <a href="#">About Us</a>
+            <div class="login">
+    
+                <a href="\register.html">Register</a>
+                <a href="\login.html">Login</a>
+            </div>
+    
+        </div>
+        </div>
+    </nav>
+    <br>
+  <header>
+    <h1>Web Development</h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="#frontend" class="a2">Frontend</a></li>
+        <li><a href="#backend" class="a2">Backend</a></li>
+         <li><a href="#css" class="a2">CSS</a></li>
+        <li><a href="#JavaScript" class="a2">JavaScript</a></li>
+        <li><a href="#Tutorial" class="a2">Tutorial</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="frontend">
+        <h2>Frontend Development</h2>
+        <p>Frontend development refers to the process of creating the user interface and experience of a website or web application. It involves utilizing technologies like HTML, CSS, and JavaScript to design and build the visual and interactive elements that users interact with directly in their web browsers.</p>
+        
+        <h3>HTML (Hypertext Markup Language)</h3>
+        <p>HTML provides the basic structure of web pages by defining the various elements such as headings, paragraphs, links, images, and forms. It serves as the backbone of any webpage, organizing content in a structured manner.</p>
+        <p>Example:</p>
+        <pre>
+    &lt;!-- This is an example of HTML --&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+    
+        <h3>CSS (Cascading Style Sheets)</h3>
+        <p>CSS is used to style HTML elements, controlling their layout, appearance, and presentation. With CSS, developers can customize the colors, fonts, spacing, and overall design of the webpage to create visually appealing and consistent user interfaces.</p>
+        <p>Example:</p>
+        <pre>
+    /* This is an example of CSS */
+    h1 {
+        color: blue;
+        font-size: 24px;
+    }
+    
+    p {
+        color: green;
+    }
+        </pre>
+    
+        <h3>JavaScript</h3>
+        <p>JavaScript is a dynamic programming language that adds interactivity and functionality to web pages. It enables developers to manipulate the content and behavior of a webpage in real-time, allowing for features like animations, form validation, dynamic content updates, and more.</p>
+        <p>Example:</p>
+        <pre>
+    // This is an example of JavaScript
+    document.getElementById("demo").innerHTML = "Hello, World!";
+        </pre>
+    </section>
+    
+    <section id="backend">
+        <h2>Backend Development</h2>
+        <p>Backend development involves server-side logic and database management. It focuses on the functionality that runs on the server and interacts with the client-side of the application.</p>
+        
+        <h3>Server-Side Programming Languages</h3>
+        <p>Backend developers often use server-side programming languages to handle requests from the client, process data, and generate dynamic content. Common languages include:</p>
+        <ul>
+            <li>JavaScript (Node.js)</li>
+            <li>Python (Django, Flask)</li>
+            <li>Java (Spring Boot)</li>
+            <li>PHP (Laravel, Symfony)</li>
+            <li>Ruby (Ruby on Rails)</li>
+        </ul>
+        <p>Example:</p>
+        <pre>
+    // This is an example of Node.js server
+    const http = require('http');
+    
+    const server = http.createServer((req, res) => {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/plain');
+      res.end('Hello, World!\n');
+    });
+    
+    server.listen(3000, 'localhost', () => {
+      console.log('Server running at http://localhost:3000/');
+    });
+        </pre>
+    
+        <h3>Database Management</h3>
+        <p>Backend developers work with databases to store and retrieve data for their applications. Common types of databases include:</p>
+        <ul>
+            <li>Relational databases (MySQL, PostgreSQL)</li>
+            <li>NoSQL databases (MongoDB, Firebase)</li>
+            <li>Graph databases (Neo4j)</li>
+        </ul>
+        <p>Example:</p>
+        <pre>
+    // This is an example of SQL query
+    SELECT * FROM users WHERE username = 'example';
+        </pre>
+    
+        <h3>API Development</h3>
+        <p>Backend developers often create APIs (Application Programming Interfaces) to allow communication between the client-side and server-side of the application. APIs define the endpoints and data formats that clients can use to interact with the backend.</p>
+        <p>Example:</p>
+        <pre>
+    // This is an example of RESTful API endpoint
+    GET /api/users
+        </pre>
+    </section>
+    
+    <section id="html">
+        <h2>HTML (Hypertext Markup Language)</h2>
+        <p>HTML is the standard markup language used to create the structure of web pages. It consists of a set of elements that define the content and layout of a webpage.</p>
+        
+        <h3>Basic Structure of HTML</h3>
+        <p>An HTML document is composed of several essential elements:</p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document type and version of HTML.</li>
+            <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+            <li><code>&lt;head&gt;</code>: Contains metadata and links to external resources.</li>
+            <li><code>&lt;title&gt;</code>: Sets the title of the webpage.</li>
+            <li><code>&lt;body&gt;</code>: Contains the visible content of the webpage.</li>
+        </ul>
+        
+        <h3>Common HTML Elements</h3>
+        <p>HTML offers a variety of elements to structure content, including:</p>
+        <ul>
+            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings of different levels.</li>
+            <li><code>&lt;p&gt;</code>: Paragraphs of text.</li>
+            <li><code>&lt;a&gt;</code>: Hyperlinks to other pages or resources.</li>
+            <li><code>&lt;img&gt;</code>: Embeds images into the page.</li>
+            <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>: Unordered and ordered lists.</li>
+            <li><code>&lt;li&gt;</code>: List items within <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>.</li>
+            <li><code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>: Generic containers for grouping content.</li>
+            <li><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;form&gt;</code>: Form elements for user input.</li>
+        </ul>
+        
+        <h3>Example:</h3>
+        <p>Here's a simple example of an HTML document:</p>
+        <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;This is my first webpage.&lt;/p&gt;
+        &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        </pre>
+    </section>
+    
+    <section id="css">
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <p>CSS is a stylesheet language used to style the appearance of HTML elements on web pages. It allows developers to control the layout, design, and presentation of web content.</p>
+        
+        <h3>Basic Syntax of CSS</h3>
+        <p>CSS consists of a set of rules, each composed of a selector and a declaration block. The selector targets HTML elements, while the declaration block contains one or more property-value pairs.</p>
+        <p>Example:</p>
+        <pre>
+    /* This is a CSS rule */
+    selector {
+        property: value;
+    }
+        </pre>
+        
+        <h3>Common CSS Properties</h3>
+        <p>CSS offers a wide range of properties to style HTML elements. Some common properties include:</p>
+        <ul>
+            <li><code>color</code>: Sets the text color.</li>
+            <li><code>font-size</code>: Specifies the size of the font.</li>
+            <li><code>background-color</code>: Sets the background color of an element.</li>
+            <li><code>margin</code> and <code>padding</code>: Controls the spacing around elements.</li>
+            <li><code>border</code>: Defines the border of an element.</li>
+            <li><code>width</code> and <code>height</code>: Sets the width and height of an element.</li>
+            <li><code>display</code>: Specifies how an element is displayed (e.g., block, inline, flex).</li>
+            <li><code>position</code>: Controls the positioning of an element (e.g., static, relative, absolute).</li>
+        </ul>
+        
+        <h3>Example:</h3>
+        <p>Here's an example of CSS styling:</p>
+        <pre>
+    /* This is a CSS rule */
+    h1 {
+        color: blue;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        color: green;
+        font-family: Arial, sans-serif;
+    }
+        </pre>
+    </section>
+    
+    <section id="JavaScript">
+        <h2>JavaScript</h2>
+        <p>JavaScript is a versatile programming language primarily used for adding interactivity and dynamic functionality to web pages. It allows developers to manipulate the content and behavior of web pages in real-time.</p>
+        
+        <h3>Basic Syntax of JavaScript</h3>
+        <p>JavaScript syntax consists of statements that are executed by the browser. It is a case-sensitive language and uses semicolons (;) to terminate statements.</p>
+        <p>Example:</p>
+        <pre>
+    // This is a JavaScript statement
+    console.log("Hello, World!");
+        </pre>
+        
+        <h3>Common JavaScript Features</h3>
+        <p>JavaScript offers a wide range of features for web development, including:</p>
+        <ul>
+            <li><strong>Variables:</strong> Used to store data values.</li>
+            <li><strong>Functions:</strong> Blocks of reusable code.</li>
+            <li><strong>Conditional Statements:</strong> Control the flow of execution based on conditions.</li>
+            <li><strong>Loops:</strong> Execute a block of code repeatedly.</li>
+            <li><strong>Events:</strong> Triggered by user interactions or browser actions.</li>
+            <li><strong>DOM Manipulation:</strong> Access and modify HTML elements and attributes.</li>
+            <li><strong>Ajax:</strong> Asynchronous data exchange with the server.</li>
+            <li><strong>ES6+ Features:</strong> Modern syntax enhancements like arrow functions, template literals, and destructuring.</li>
+        </ul>
+        
+        <h3>Example:</h3>
+        <p>Here's an example of JavaScript code:</p>
+        <pre>
+    // This is a JavaScript function
+    function greet(name) {
+        return "Hello, " + name + "!";
+    }
+    
+    console.log(greet("World"));
+        </pre>
+    </section>
+    <section id="Tutorial">
+        <h2>Tutorials</h2>
+      <p>We have the video section for you where we have select the spefic videos from the various videos available on the basis of the your demand and time we have seprated the videos.<br></p>
+      <h3>Click here for go to video section:</h3><!--Add Html page--><a href="web.html" class="a2">Click Me</a>
+    </section>
+    
+</main>
+  <footer>
+    <p>&copy; 2024 Python Programming. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

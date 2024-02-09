@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cppth.css">
+  <link rel="stylesheet" href="style.css">
+  <title>C language</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+        <img src="WhatsApp_Image_2024-02-08_at_19.45.14_bd9656ee-removebg-preview.png" alt="logo" height="65px">
+        <h1 style="font-size: 40px;display: inline; float: left; margin-top: 0;padding-bottom:10 ; color: #ea9368;">Study </h1>
+        <a href="\index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Lifestyle</a>
+            <div class="dropdown-content">
+                <a href="\life_style(teory).html">Personality Development</a>
+                <a href="\attire(theory).html">Attire</a>
+                <a href="\food.html">Food </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Study</a>
+            <div class="dropdown-content">
+                <a href="\c_theory.html">C</a>
+                <a href="\yoga_c++/c++/index_Cpp.html">C++</a>
+                <a href="\java_zip/java/index_java.html">Java</a>
+                <a href="\python/python.html">Python</a>
+                <a href="\web_dev/webth.html">Web-dev</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Workout</a>
+            <div class="dropdown-content">
+                <a href="\gym/gym.html">Exercise</a>
+                <a href="\yoga_c++/yoga/yoga.html">Yoga</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+        <div class="login">
+
+            <a href="\register.html">Register</a>
+            <a href="\login.html">Login</a>
+        </div>
+
+    </div>
+    </div>
+</nav>
+<br>
+  <header>
+    <h1>C++ Programming Language</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#intro" class="a2">Introduction</a></li>
+      <li><a href="#basics" class="a2">Basics</a></li>
+      <li><a href="#advanced" class="a2">Advanced</a></li>
+      <li><a href="#tutorials" class="a2">Tutorials</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>C++ is the most used and most popular programming language developed by Bjarne Stroustrup. C++ is a high-level and object-oriented programming language. This language allows developers to write clean and efficient code for large applications and software development, game development, and operating system programming. It is an expansion of the C programming language to include Object Oriented Programming(OOPs) and is used to develop programs for computers. This C++ Tutorial will cover all the basic to advanced topics of C++ like C++ basics, C++ functions, C++ classes, OOPs and STL concepts.</p>
+      <ul>
+        <li><strong>What is C++?</strong> C++ is a most popular cross-platform programming language which is used to create high-performance applications and software like OS, Games, E-commerce software, etc. It was developed by Bjarne Stroustrup, as an extension of C language. C++ give a high level of control over system resources and memory.</li>
+        <li><strong>Why Learn C++?</strong> <br><ul type="square">
+          <li>C++ is one of the most used and popular programming languages.
+           <li> C++ is used in making operating systems, embedded systems, and Graphical User Interfaces.
+           <li>It is an object-oriented programming language that implements all the OOPs concepts such as Abstraction, Encapsulation, and Inheritance, which gives a clear
+               structure to programs and allows code to be reused, lowering development costs and providing security.
+           <li> It is portable and can be used to create applications that can be adapted to multiple platforms.
+           <li> C++ is easy to learn so that you can choose it as your first programming language.
+           <li> It makes programming easy for programmers to switch to C++ because its syntax is similar to C, Java, and C#.</ul></li>
+      </ul>
+     
+    </section>
+    <section id="basics">
+      <h2>Basics</h2>
+      <p>Learn the fundamentals of C++ programming language.</p>
+      <ul>
+        <li><strong>Variables and Data Types:</strong> In C++ language, variables are used to store data temporarily in computer memory. They have specific data types which determine the kind of data they can hold and how it is interpreted. Here's a brief overview of common data types in C++:<br>
+
+          <b>1)Integer:</b> The keyword used for integer data types is int. Integers typically require 4 bytes of memory space and range from -2147483648 to 2147483647.  .<br>
+          
+          <b>2)Character:</b>  Character data type is used for storing characters. The keyword used for the character data type is char. Characters typically require 1 byte of memory space and range from -128 to 127 or 0 to 255.  <br>
+          
+          <b>3)Boolean:</b> Boolean data type is used for storing Boolean or logical values. A Boolean variable can store either true or false. The keyword used for the Boolean data type is bool. <br>
+          
+          <b>4)Floating Point:</b> Floating Point data type is used for storing single-precision floating-point values or decimal values. The keyword used for the floating-point data type is float. Float variables typically require 4 bytes of memory space. <br>
+          
+          <b>5)Wide Character:</b>  Wide character data type is also a character data type but this data type has a size greater than the normal 8-bit data type. Represented by wchar_t. It is generally 2 or 4 bytes long.<br>
+          
+          <b>6)Double Floating Point:</b> Double Floating Point data type is used for storing double-precision floating-point values or decimal values. The keyword used for the double floating-point data type is double. Double variables typically require 8 bytes of memory space. <br></li><br>
+        <li><strong>Types of C++ Literals:</strong> In C++ language,Literals represent fixed values that cannot be modified. Literals contain memory but they do not have references as variables. Generally, both terms, constants, and literals are used interchangeably. 
+          For example, “const int = 5;“, is a constant expression and the value 5 is referred to as a constant integer literal.<br>
+
+          <b>1) Integer Literals:</b>Integer literals are used to represent and store the integer values only. Integer literals are expressed in two types i.e.
+
+          A) Prefixes: The Prefix of the integer literal indicates the base in which it is to be <br>
+          B) Suffixes: The Prefix of the integer literal indicates the type in which it is to be read.<br>
+          <b>2) Floating-Point Literals:</b>
+          These are used to represent and store real numbers. The real number has an integer part, real part, fractional part, and exponential part. The floating-point literals can be stored either in decimal form or exponential form. While representing the floating-point decimals one must keep two things in mind to produce valid literal:
+<ul>
+<li>In the decimal form, one must include the decimal point, exponent part, or both, otherwise, it will lead to an error.
+<li>In the exponential form, one must include the integer part, fractional part, or both, otherwise, it will lead to an error.
+</ul>
+          <b>3) Character Literals:</b>This refers to the literal that is used to store a single character within a single quote. To store multiple characters, one needs to use a character array. Storing more than one character within a single quote will throw a warning and display just the last character of the literal. It gives rise to the following two representations:<br>
+          char type: This is used to store normal character literal or narrow-character literals.<br>
+          <b>3) String Literals:</b>String literals are similar to that character literals, except that they can store multiple characters and uses a double quote to store the same. It can also accommodate the special characters and escape sequences mentioned in the table above. We can break a long line into multiple lines using string literal and can separate them with the help of white spaces.<br>
+
+
+        <li><strong>Loops in the C++:</strong> Loops in the C++ language are constructs used to repeatedly execute a block of code until a certain condition is met. There are three main types of loops in C++:<br>
+
+         <b> i) For Loop: </b>The for loop iterates a block of code a fixed number of times. It consists of three parts: initialization, condition, and increment/decrement.<br>
+          
+          
+          for (initialization; condition; <br>increment/decrement) {<br>
+              // Code block to be executed <br>repeatedly<br>
+          }<br>
+          <b> ii) while Loop: </b> The while loop repeatedly executes a block of code as long as the given condition is true.<br>
+          
+          
+          while (condition) {<br>
+              // Code block to be executed <br>repeatedly
+          }<br>
+          <b> iii)do-while Loop: </b> The do-while loop is similar to the while loop, but it guarantees that the code block is executed at least once before checking the condition to continue.<br>
+          
+         
+          do {<br>
+              // Code block to be executed <br>repeatedly
+          } while (condition);<br></li>
+        <li><strong>Input and Output:</strong> <br>
+          <ul>
+            <li><b>iostream :</b> iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.</li>
+            <li><b>iomanip :</b>iomanip stands for input-output manipulators. The methods declared in these files are used for manipulating streams. This file contains definitions of setw, setprecision, etc.</li>
+            <li><b>fstream :</b>This header file mainly describes the file stream. This header file is used to handle the data being read from a file as input or data being written into the file as output.</li>
+            <li><b>bits/stdc++:</b>This header file includes every standard library. In programming contests, using this file is a good idea, when you want to reduce the time wasted in doing chores; especially when your rank is time sensitive.</li>
+          </ul>
+          In C++ after the header files, we often use ‘using namespace std;‘. The reason behind it is that all of the standard library definitions are inside the namespace std. As the library functions are not defined at global scope, so in order to use them we use namespace std. So, that we don’t need to write STD:: at every line (eg. STD::cout etc.).<br>
+          The two instances cout in C++ and cin in C++ of iostream class are used very often for printing outputs and taking inputs respectively. These two are the most basic methods of taking input and printing output in C++. To use cin and cout in C++ one must include the header file iostream in the program.<br>
+          <b>Standard output stream (cout):</b>Usually the standard output device is the display screen. The C++ cout statement is the instance of the ostream class. It is used to produce output on the standard output device which is usually the display screen. The data needed to be displayed on the screen is inserted in the standard output stream (cout) using the insertion operator(<<).<br>
+          <b>standard input stream (cin): </b>Usually the input device in a computer is the keyboard. C++ cin statement is the instance of the class istream and is used to read input from the standard input device which is usually a keyboard. 
+          The extraction operator(>>) is used along with the object cin for reading inputs. The extraction operator extracts the data from the object cin which is entered using the keyboard.<br>
+          
+        <li><strong>Conditional statment:</strong> if-else statement:<br>
+
+          The if-else statement allows you to execute a block of code based on whether a specified condition is true or false.<br>
+          switch-case statement:<br>
+
+          The switch-case statement provides a way to select one of many blocks of code to be executed.</li>
+      </ul>
+      
+    </section>
+    <section id="advanced">
+      <h2>Advanced</h2>
+      <p>Dive deeper into advanced C++ topics and techniques.</p>
+      <ul>
+        <li><strong>Pointers:</strong>Pointers are symbolic representations of addresses. They enable programs to simulate call-by-reference as well as to create and manipulate dynamic data structures. Iterating over elements in arrays or other data structures is one of the main use of pointers. 
+          The address of the variable you’re working with is assigned to the pointer variable that points to the same data type (such as an int or string).</li>
+        <li><strong>References in C++</strong> 
+          When a variable is declared as a reference, it becomes an alternative name for an existing variable. A variable can be declared as a reference by putting ‘&’ in the declaration. There are 3 ways to pass C++ arguments to a function: 
+          <ul>
+          <li>call-by-value
+          <li>call-by-reference with a pointer argument
+          <li>call-by-reference with a reference argument
+            </ul></li>
+        <li><strong>Array:</strong> In C++, an array is a data structure that is used to store multiple values of similar data types in a contiguous memory location.
+
+          For example, if we have to store the marks of 4 or 5 students then we can easily store them by creating 5 different variables but what if we want to store marks of 100 students or say 500 students then it becomes very challenging to create that numbers of variable and manage them. Now, arrays come into the picture that can do it easily by just creating an array of the required size..</li>
+        <li><strong>Polymorphism:</strong>The word “polymorphism” means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A real-life example of polymorphism is a person who at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person exhibits different behavior in different situations. This is called polymorphism. Polymorphism is considered one of the important features of Object-Oriented Programming.<br>
+          Types of Polymorphism:<br>
+          1.Compile-time Polymorphism<br>
+          2.Runtime Polymorphism<br>
+      </li>
+      <li><strong>Inheritance:</strong>
+        The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming. 
+<br>
+        Inheritance is a feature or a process in which, new classes are created from the existing classes. The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. The derived class now is said to be inherited from the base class.
+        <br>
+        When we say derived class inherits the base class, it means, the derived class inherits all the properties of the base class, without changing the properties of base class and may add new features to its own. These new features in the derived class will not affect the base class. The derived class is the specialized class for the base class.</li>
+      </ul>
+      
+    </section>
+    <section id="tutorials">
+      <h2>Tutorials</h2>
+      <p>We have the video section for you where we have select the spefic videos from the various videos available on the basis of the your demand and time we have seprated the videos.<br></p>
+      <h3>Click here for go to video section:</h3><a href="cpp.html#vd" class="a2">Click Me</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Python Programming. All rights reserved.</p>
+  </footer>
+</body>
+</html>

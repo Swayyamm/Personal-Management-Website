@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Personal Development</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+  /* background: linear-gradient(to right, #5588df, #00BCD4); */
+  background-image: url(7.jpg);
+background-size: cover;
+  background-repeat: no-repeat;
+
+        }
+     #mainSection{
+        margin-left: 100px;
+     }
+     
+    
+    
+     #login {
+  text-align: center;
+  width: 500px;
+  height: 420px;
+  border: 0px solid black;
+  border-radius: 7px;
+  /* background-color: rgba(0, 0, 0, 0.15); */
+  background: linear-gradient(to right, #5588df, #00BCD4);
+
+  /* filter: blur(8px); */
+}
+#loginDetails {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-top: 10%;
+}
+#loginDetails input {
+    margin: 3% 15% 9% 15%;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.loginBtn a {
+  text-decoration: none;
+  color: black;
+}
+.loginBtn {
+  transition-duration: 0.5s;
+  background-color: white;
+  border-radius: 5px;
+  width: 70px;
+  cursor: pointer;
+  padding: 10px;
+  border: 0px solid black;
+}
+.loginBtn:hover {
+  /* background-color: lightskyblue; */
+  background: linear-gradient(to right, rgb(213, 193, 250), #a6ebf4);
+
+}
+    </style>
+ 
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="WhatsApp_Image_2024-02-08_at_19.45.14_bd9656ee-removebg-preview.png" alt="logo" height="65px">
+            <h1 style="font-size: 40px;display: inline; float: left; margin-top: 0;padding-bottom:10 ;">Personal Development</h1>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Lifestyle</a>
+                <div class="dropdown-content">
+                    <a href="life_style(teory).html">Personality Development</a>
+                    <a href="attire(theory).html">Attire</a>
+                    <a href="food.html">Food </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Study</a>
+                <div class="dropdown-content">
+                    <a href="c_theory.html">C</a>
+                    <a href="yoga_c++/c++/index_Cpp.html">C++</a>
+                    <a href="java_zip/java/index_java.html">Java</a>
+                    <a href="python/python.html">Python</a>
+                    <a href="web_dev/webth.html">Web-dev</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Workout</a>
+                <div class="dropdown-content">
+                    <a href="gym/gym.html">Exercise</a>
+                    <a href="yoga_c++/yoga/yoga.html">Yoga</a>
+                </div>
+            </div>
+            <a href="#">About Us</a>
+            <div class="login">
+
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <main id="mainSection" style="margin-top: 5%;margin-right: 5%;">
+       <center>
+
+           <div id="right">
+               <div id="login">
+                   <h1 style="padding-top: 8%;color: white;">Login</h1>
+                   <div id="loginDetails">
+                       <input placeholder="Username" type="text" id="email" />
+                       <input placeholder="Password" type="password" id="password" />
+                       <p style="color: red;margin-top: 1%;display: none;margin-bottom: 1%;" id="passErr" "=""><b>Password should have atleast 8 characters.</b></p>
+                       <center>
+                           
+                           <button class="loginBtn" id="loginBtn2">Login</button>
+                        </center>
+                    </div>
+                </div>
+                
+            </div>
+        </center>
+    </main>
+</body>
+</html>

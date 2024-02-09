@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="style.css">
+  <title>C language</title>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    #basics,
+#advanced,
+#libraries,
+#tutorials {
+  transition: all 0.3s;
+}
+#nav1 ul{
+  padding-bottom: 1.1%;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+        <img src="WhatsApp_Image_2024-02-08_at_19.45.14_bd9656ee-removebg-preview.png" alt="logo" height="65px">
+        <h1 style="font-size: 40px;display: inline; float: left; margin-top: 0;padding-bottom:10 ;">Study</h1>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#">Lifestyle</a>
+            <div class="dropdown-content">
+                <a href="life_style(teory).html">Personality Development</a>
+                <a href="attire(theory).html">Attire</a>
+                <a href="food.html">Food </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Study</a>
+            <div class="dropdown-content">
+                <a href="c_theory.html">C</a>
+                <a href="yoga_c++/c++/index_Cpp.html">C++</a>
+                <a href="java_zip/java/index_java.html">Java</a>
+                <a href="python/python.html">Python</a>
+                <a href="web_dev/webth.html">Web-dev</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Workout</a>
+            <div class="dropdown-content">
+                <a href="gym/gym.html">Exercise</a>
+                <a href="yoga_c++/yoga/yoga.html">Yoga</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+        <div class="login">
+
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </div>
+
+    </div>
+    </div>
+</nav>
+<br>
+  <header>
+    <h1>C language</h1>
+  </header>
+  <nav id="nav1">
+    
+      <a href="#basics" class="a2">Basics</a></li>
+      <a href="#advanced" class="a2">Advanced</a></li>
+      <a href="#libraries" class="a2">Libraries</a></li>
+      <a href="#tutorials" class="a2">Tutorials</a></li>
+
+  </nav>
+  <main>
+    
+    <section id="basics">
+      <h2>Basics</h2>
+      <p>Learn the fundamentals of C programming language.</p>
+      <ul>
+        <li><strong>Variables and Data Types:</strong> In C language, variables are used to store data temporarily in computer memory. They have specific data types which determine the kind of data they can hold and how it is interpreted. Here's a brief overview of common data types in C:<br>
+
+          1) int: Used for storing integer values (whole numbers) like -10, 0, 42.<br>
+          
+          2) float: Used for storing floating-point numbers (decimal numbers) like 3.14, -0.5, 10.0.<br>
+          
+          3) double: Similar to float but with higher precision for decimal numbers.<br>
+          
+          4) char: Used for storing single characters like 'a', '7', '@'.<br>
+          
+          5) _Bool: Used for storing boolean values, typically represented as 0 (false) or 1 (true).<br>
+          
+          6) void: Represents the absence of type, often used as a return type for functions that don't return a value or accept unspecified types.<br></li>
+        <li><strong>Functions:</strong> In C language, functions are blocks of code that perform specific tasks and can be called multiple times from different parts of the program. They are essential for organizing code, improving readability, and promoting code reusability.<br>
+
+          Here's a brief overview of functions and their types in C:<br>
+          
+          Function Declaration: This specifies the name of the function, its return type, and the types of parameters it accepts. It tells the compiler about the existence of the function.<br>
+          
+          returnType functionName(type1 arg1, type2 arg2, ...);<br>
+          Function Definition: This contains the actual implementation of the function. It includes the function header (return type, name, and parameters) and the body (statements to be executed).<br>
+          
+         
+          returnType functionName(type1 arg1, type2 arg2, ...) {<br>
+              // Function body<br>
+              // Statements<br>
+              return value; // (if returnType is not void)<br>
+          }<br>
+          Types of Functions:<br>
+          
+          a. Library Functions: These are predefined functions provided by C standard libraries, such as printf(), scanf(), strlen(), etc. They perform common tasks and are accessible to all C programs.<br>
+          
+          b. User-defined Functions: These are functions created by the programmer to perform specific tasks. They enhance code modularity, readability, and reusability.<br>
+          
+          c. Recursive Functions: These are functions that call themselves either directly or indirectly. They are useful for solving problems that can be broken down into smaller instances of the same problem.<br>
+          
+          d. Inline Functions: These are small functions defined with the inline keyword. They are expanded by the compiler at the point of invocation, which can improve performance by avoiding the overhead of function call.<br>
+          
+          e. Static Functions: Functions declared with the static keyword are accessible only within the file they are defined in. They cannot be accessed from other files using the extern keyword.<br>
+          
+          f. Function Pointers: These are pointers that point to the address of a function instead of a variable. They allow functions to be passed as arguments to other functions or stored in data structures.<br>
+          
+          g. Callback Functions: These are functions passed as arguments to other functions, which are then called within the function body. They are used to implement event handling, sorting algorithms, etc.<br>
+          
+          h. Variadic Functions: These are functions that accept a variable number of arguments. Examples include printf() and scanf().<br></li>
+        <li><strong>Loops in the c:</strong> Loops in the C language are constructs used to repeatedly execute a block of code until a certain condition is met. There are three main types of loops in C:<br>
+
+          i) For Loop: The for loop iterates a block of code a fixed number of times. It consists of three parts: initialization, condition, and increment/decrement.<br>
+          
+          
+          for (initialization; condition; <br>increment/decrement) {<br>
+              // Code block to be executed <br>repeatedly<br>
+          }<br>
+          ii) While Loop: The while loop repeatedly executes a block of code as long as the given condition is true.<br>
+          
+          
+          while (condition) {<br>
+              // Code block to be executed <br>repeatedly
+          }<br>
+          iii) Do-While Loop: The do-while loop is similar to the while loop, but it guarantees that the code block is executed at least once before checking the condition to continue.<br>
+          
+         
+          do {<br>
+              // Code block to be executed <br>repeatedly
+          } while (condition);<br></li>
+        <li><strong>Input and Output:</strong> 
+          In C programming, the input and output functions are used to handle the flow of data between the program and the external environment, such as the user or files. Here's a brief explanation:<br>
+
+          i) Input Functions: These functions are used to receive data into the program from an external source. The most common input function in C is scanf(), which reads formatted data from the standard input (keyboard by default) or other specified streams.<br>
+          
+          ii) Output Functions: These functions are used to display data generated by the program to the user or to write it to a file or another output device. The most common output function in C is printf(), which formats and prints data to the standard output (usually the console) or other specified streams.<br>
+        </li>
+        <li><strong>Conditional statment:</strong> if-else statement:<br>
+
+          The if-else statement allows you to execute a block of code based on whether a specified condition is true or false.<br>
+          switch-case statement:<br>
+
+          The switch-case statement provides a way to select one of many blocks of code to be executed.</li>
+      </ul>
+      
+    </section>
+    <section id="advanced">
+      <h2>Advanced</h2>
+      <p>Dive deeper into advanced C topics and techniques.</p>
+      <ul>
+        <li><strong>Pointers:</strong>In C language, a pointer is a variable that stores the memory address of another variable. It allows indirect access to a memory location, which is useful for dynamic memory allocation, passing parameters by reference, and building complex data structures like linked lists and trees. Pointers are fundamental for low-level programming tasks and are used extensively in system programming and embedded systems development.</li>
+        <li><strong>Structure and Union:</strong> 
+        In C language, a union and a structure are both ways to group together different data types into a single composite data type.<br>
+
+          Structure: A structure is a composite data type that allows you to group together variables of different data types under a single name. Each variable within a structure is called a member or a field. Structures are used to represent a collection of related data items. For example, you could define a structure called person to hold information about a person, such as their name, age, and address.<br></li>
+        <li><strong>Array:</strong> In C, an array is a collection of elements of the same data type, stored in contiguous memory locations. It is declared using square brackets [] and can hold a fixed number of elements. Arrays are indexed starting from 0, meaning the first element is accessed using index 0, the second using index 1, and so on. Arrays provide an efficient way to store and access multiple values of the same type.</li>
+        <li><strong>File Handling:</strong> File handling in C involves operations performed on files, such as reading from and writing to them. Here's a brief overview:<br>
+          <ul>
+         <li> Opening a file:</li> Before performing any operation on a file, it needs to be opened. This is done using the fopen() function, which takes the file path and mode as parameters.<br>
+          
+          <li>Reading from a file:</li> After opening a file for reading ("r" mode), data can be read from it using functions like fscanf() or fgets().<br>
+          
+          <li>Writing to a file:</li> After opening a file for writing ("w" mode), data can be written to it using functions like fprintf() or fputs().<br>
+          
+          <li>Closing a file:</li> After performing all necessary operations, the file should be closed using the fclose() function. This releases system resources associated with the file.<br>
+          
+          <li>Error handling:</li> It's essential to check for errors during file operations. Functions like feof() and ferror() can be used to check for end-of-file or error conditions.<br>
+          
+          <li>File positioning:</li> Functions like fseek() and rewind() can be used to move the file pointer to a specific position within the file.<br></ul></li>
+      </ul>
+      
+    </section>
+    <section id="libraries">
+      <h2>Libraries</h2>
+      <p>Discover popular C libraries for various tasks and applications.</p>
+      <ul>
+        <li><strong>Standard Library:</strong> The Standard Library, also known as the Standard C Library, is provided as part of the C language specification. It contains essential functions for input/output operations (stdio.h), string manipulation (string.h), memory allocation (stdlib.h), mathematical operations (math.h), and more. Standard libraries are typically included using #include directives at the beginning of C programs.</li>
+        <li><strong>External Libraries:</strong> External libraries are additional collections of functions and declarations that are not part of the standard C library but provide specific functionalities. These libraries are created by third-party developers or organizations to extend the capabilities of the C language. Examples of external libraries include graphics libraries, networking libraries, and data processing libraries. External libraries are typically linked to C programs during the compilation process using compiler-specific options or directives.</li>
+      </ul>
+     
+    </section>
+    <section id="tutorials">
+      <h2>Tutorials</h2>
+      <p>We have the video section for you where we have select the spefic videos from the various videos available on the basis of the your demand and time we have seprated the videos.<br></p>
+      <h3>Click here for go to video section:</h3><a href="c_video.html" class="a2">Click Me</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Python Programming. All rights reserved.</p>
+  </footer>
+</body>
+</html>
